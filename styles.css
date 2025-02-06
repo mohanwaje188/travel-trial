@@ -1,0 +1,123 @@
+.body {
+   background-color:whitesmoke;
+   scroll-behavior: smooth;
+  }
+  
+  .title { 
+    font-family:  serif;  
+    color: #0047ab;  
+    font-size: 28px;  
+    text-transform: uppercase;  
+    font-weight: bold;  
+    letter-spacing: 2px;  
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  
+   
+   
+   
+}
+
+.nav{
+    font-family: serif;
+}
+
+.lead{
+ 
+    font-style: oblique;
+    font-family: serif;
+    margin: 25px;
+    padding: 20px;
+}
+.btn{
+    font-family: serif;
+    outline: 5px;
+    color:blue;
+}
+#img{
+    width: 700px;
+    height: 350;
+}
+
+.carousel-item img {
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #ff5733;
+    border-color: #ff5733;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e64a19;
+    border-color: #e64a19;
+}
+
+/* Carousel Caption Styling */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.col{
+    margin-top: 10px;
+}
+
+.text{
+    color: blue;
+    size: 5rem
+}
+
+/* Smooth fade-in animation for the pricing section */
+#pricing {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Card hover effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Globetrotter plan glow effect */
+.border-primary {
+    animation: glow 1.5s infinite alternate ease-in-out;
+}
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+    }
+}
+
+/* Button animation */
+.btn-outline-primary {
+    transition: all 0.3s ease-in-out;
+}
+.btn-outline-primary:hover {
+    background-color: #0047ab;
+    color: white;
+    transform: scale(1.1);
+}
